@@ -1,10 +1,10 @@
 "use client";
 
-import { gsap } from "gsap";
-import * as THREE from "three";
 import { ContactShadows, Float, Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { gsap } from "gsap";
 import { Suspense, useEffect, useRef, useState } from "react";
+import * as THREE from "three";
 
 export function Shapes() {
   return (

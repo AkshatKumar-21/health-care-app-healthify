@@ -1,10 +1,10 @@
 "use client";
 
-import * as THREE from "three";
-import { Canvas } from "@react-three/fiber";
-import { ContactShadows, Float, Environment } from "@react-three/drei";
-import { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import * as THREE from "three";
+import { ContactShadows, Float, Environment } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 export function Shapes() {
   return (
@@ -134,7 +134,7 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
   };
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       setVisible(true);
       gsap.from(meshRef.current.scale, {
         x: 0,
